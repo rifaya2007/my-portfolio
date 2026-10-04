@@ -1,0 +1,554 @@
+.contact {
+    position: relative;
+
+    padding: 95px max(60px, calc((100% - 1200px) / 2)) 25px;
+
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(139, 92, 246, 0.14),
+            transparent 28%
+        ),
+        #18132a;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.contact-top {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-label {
+    margin: 0 0 28px;
+
+    color: #a78bfa;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.contact-heading h2 {
+    margin: 0;
+
+    font-size: clamp(48px, 6vw, 76px);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    font-weight: 600;
+}
+
+.contact-heading h2 span {
+    color: #a78bfa;
+}
+
+
+/* =========================
+   MAIN CONTACT AREA
+========================= */
+
+.contact-main {
+    max-width: 1100px;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.6fr;
+
+    gap: 70px;
+
+    margin: 65px auto 0;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.contact-message {
+    max-width: 650px;
+}
+
+.contact-message > p {
+    max-width: 600px;
+
+    margin: 0 0 32px;
+
+    color: #bcb5ca;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   EMAIL
+========================= */
+
+.email-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #c4b5fd;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.email-link svg {
+    width: 19px;
+    height: 19px;
+
+    color: #a78bfa;
+
+    transition: transform 0.3s ease;
+}
+
+.email-link:hover {
+    color: #ffffff;
+
+    gap: 18px;
+}
+
+.email-link:hover svg {
+    transform: translate(4px, -4px);
+}
+
+
+/* =========================
+   SIDE INFORMATION
+========================= */
+
+.contact-side {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    align-self: center;
+}
+
+.availability,
+.location {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px 24px;
+    border-radius: 16px;
+
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.availability:hover,
+.location:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-2px);
+}
+
+
+/* AVAILABILITY DOT */
+
+.availability-dot {
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #a78bfa;
+
+    box-shadow:
+        0 0 0 4px rgba(167, 139, 250, 0.1);
+
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 3px rgba(167, 139, 250, 0.08);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 6px rgba(167, 139, 250, 0.03);
+    }
+}
+
+
+.availability div,
+.location div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.availability span,
+.location span {
+    color: #a78bfa;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.availability strong,
+.location strong {
+    max-width: 260px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    margin-top: 4px;
+}
+
+.location > svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+
+    color: #a78bfa;
+}
+
+
+/* =========================
+   CONTACT ACTIONS
+========================= */
+
+.contact-bottom {
+    max-width: 1100px;
+
+    display: grid;
+
+    grid-template-columns: 0.7fr 1.3fr;
+
+    gap: 50px;
+
+    margin: 75px auto 0;
+
+    padding: 30px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+/* SMALL MESSAGE */
+
+.contact-message-small {
+    display: flex;
+
+    align-items: center;
+}
+
+.contact-message-small p {
+    max-width: 260px;
+
+    margin: 0;
+
+    color: #bcb5ca;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.contact-message-small strong {
+    color: #ffffff;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.contact-actions {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 8px;
+}
+
+.contact-action {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 56px;
+
+    padding: 0 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+
+    color: #bcb5ca;
+
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.02);
+
+    font-size: 14px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contact-action svg {
+    width: 15px;
+    height: 15px;
+}
+
+.contact-action svg:last-child {
+    margin-left: auto;
+
+    transition: transform 0.3s ease;
+}
+
+.contact-action:hover {
+    color: #ffffff;
+
+    background: rgba(124, 58, 237, 0.18);
+
+    border-color: rgba(167, 139, 250, 0.35);
+
+    transform: translateY(-2px);
+}
+
+.contact-action:hover svg:last-child {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.contact-footer {
+    max-width: 1100px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 20px auto 0;
+
+    padding-top: 5px;
+
+    color: #8c8398;
+
+    font-size: 13px;
+}
+
+.footer-left {
+    display: flex;
+
+    gap: 18px;
+}
+
+.footer-right {
+    display: flex;
+
+    gap: 22px;
+}
+
+.footer-right a {
+    color: #6f667b;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #a78bfa;
+}
+
+
+/* =========================
+   FOCUS
+========================= */
+
+.contact a:focus {
+    outline: none;
+}
+
+.contact a:focus-visible {
+    outline: 2px solid #a78bfa;
+
+    outline-offset: 4px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .contact {
+        padding: 80px 35px 25px;
+    }
+
+    .contact-main {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        margin-top: 55px;
+    }
+
+    .contact-side {
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+
+    .contact-bottom {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .contact {
+        padding: 60px 20px 20px;
+    }
+
+    .contact-label {
+        margin-bottom: 22px;
+    }
+
+    .contact-heading h2 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .contact-main {
+        margin-top: 50px;
+
+        padding-top: 25px;
+    }
+
+    .contact-message > p {
+        font-size: 14px;
+    }
+
+    .email-link {
+        font-size: 18px;
+    }
+
+    .contact-side {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .contact-bottom {
+        margin-top: 55px;
+
+        padding: 25px 0;
+    }
+
+    .contact-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .footer-right {
+        gap: 18px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+
+    .contact-heading h2 {
+        font-size: 42px;
+    }
+
+    .email-link {
+        font-size: 16px;
+    }
+
+    .contact-message-small p {
+        font-size: 14px;
+    }
+}
