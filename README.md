@@ -3,7 +3,7 @@
 Welcome to the repository for my personal portfolio website! This site showcases my academic journey, technical skills, and projects as a Computer Science and Engineering student.
 
 ## 🚀 Live Demo
-*(You can add your Vercel deployment link here once it is live!)*
+You can view the live portfolio here: **[https://rifaya-portfolio.vercel.app/](https://rifaya-portfolio.vercel.app/)**
 
 ## 🛠️ Tech Stack
 This project was built with modern web development tools:
@@ -41,4 +41,4 @@ If you want to run this project on your local machine:
 ## 📬 Contact
 - **LinkedIn:** [Rifaya Parveen](https://www.linkedin.com/in/rifaya-parveen/)
 - **GitHub:** [@rifaya2007](https://github.com/rifaya2007)
-- **Email:** barakathrifaya@gmail.com
+- **Email:** 24csea23@gmail.com
